@@ -18,10 +18,8 @@ public class SeleniumTest {
 
     @Before
     public void setUp() {
-        // Set up ChromeDriver path
-        System.setProperty("webdriver.chrome.driver", "driver/chromedriver");
 
-        // Create a new ChromeDriver instance
+        System.setProperty("webdriver.chrome.driver", "driver/chromedriver");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("headless");
         driver = new ChromeDriver(options);
